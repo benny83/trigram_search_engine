@@ -1,0 +1,13 @@
+<form method="GET" action="/" remote="true">
+  <input placeholder="Search" id="trigram_search" type="text" name="q" remote="true"/>
+  <input type="submit">
+</form>
+
+<% final ||= [] %>
+<% if final %>
+  <table id="test_table">
+    <% final.each do |id| %>
+      <tr><td><%= Country.find(id) %></td></tr>
+    <% end %>
+  </table>
+<% end %>
