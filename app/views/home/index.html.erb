@@ -2,12 +2,11 @@
 <p>Similarity coefficient for Submit is <b>0.3</b></p>
 
 <div class="col-xs-6">
-  <form method="GET" action="/" id='form_search'>
+  <form method="GET" action="/">
     <input placeholder="Search" id="search" type="text" name="q" />
-    <input type="submit">
+    <input type="submit" class="btn btn-info">
   </form>
 </div>
-
 <br>
 <br>
 <br>
@@ -17,12 +16,10 @@
 <br>
 <br>
 <br>
-
 <div class="col-xs-12">
   <table class="table table-striped">
-    <tr><th colspan="10" >Countries</th></tr>
+    <tr><th colspan="10">Countries</th></tr>
     <%= generate_countries_name_table %>
-
-
   </table>
 </div>
+<a href="/" class="btn btn-success">Home</a>
